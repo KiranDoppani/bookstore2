@@ -231,7 +231,7 @@
     </footer>
 
     <script>
-        // Category switching functionality
+
         const categoryTabs = document.querySelectorAll('.category-tab');
         const bookCards = document.querySelectorAll('.book-card');
         const categoryTitle = document.getElementById('category-title');
@@ -265,16 +265,15 @@
             tab.addEventListener('click', () => {
                 const category = tab.dataset.category;
                 
-                // Update active tab
+    
                 categoryTabs.forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
                 
-                // Update page content
                 categoryTitle.textContent = categoryData[category].title;
                 categoryDescription.textContent = categoryData[category].description;
                 currentCategory.textContent = categoryData[category].title.replace(' Books', '');
                 
-                // Show/hide books
+            
                 bookCards.forEach(card => {
                     if (card.dataset.category === category) {
                         card.style.display = 'block';
@@ -285,7 +284,7 @@
             });
         });
 
-        // Get category from URL parameter if available
+        
         const urlParams = new URLSearchParams(window.location.search);
         const categoryParam = urlParams.get('category');
         if (categoryParam) {
