@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - BookHaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>📚 BookHaven</h1></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html" class="active">Books</a></li>
+                    <li><a href="cart.html" class="cart-icon">🛒 Cart (3)</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="books-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> > <span id="current-category">Fiction</span>
+                </div>
+                <h2 id="category-title">Fiction Books</h2>
+                <p id="category-description">Explore imaginary worlds and compelling stories</p>
+            </div>
+        </section>
+
+        <section class="books-filters">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="fiction">Fiction</button>
+                        <button class="category-tab" data-category="non-fiction">Non Fiction</button>
+                        <button class="category-tab" data-category="children">Children Books</button>
+                        <button class="category-tab" data-category="education">Education</button>
+                        <button class="category-tab" data-category="poetry">Poetry</button>
+                    </div>
+                    <div class="sort-options">
+                        <select class="sort-select">
+                            <option value="popular">Most Popular</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest First</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="books-listing">
+            <div class="container">
+                <div class="books-grid" id="books-container">
+                    <!-- Fiction Books -->
+                    <div class="book-card" data-category="fiction">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>The Great Adventure</h3>
+                            <p class="author">by Jane Smith</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(124 reviews)</span>
+                            </div>
+                            <p class="price">$24.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-category="fiction">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Mystery of the Lost City</h3>
+                            <p class="author">by Robert Johnson</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(89 reviews)</span>
+                            </div>
+                            <p class="price">$19.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-category="fiction">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Love in Paris</h3>
+                            <p class="author">by Emily Davis</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(156 reviews)</span>
+                            </div>
+                            <p class="price">$22.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Non-Fiction Books -->
+                    <div class="book-card" data-category="non-fiction" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Modern Science</h3>
+                            <p class="author">by Dr. John Doe</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(203 reviews)</span>
+                            </div>
+                            <p class="price">$34.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-category="non-fiction" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>History of Innovation</h3>
+                            <p class="author">by Sarah Wilson</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(78 reviews)</span>
+                            </div>
+                            <p class="price">$29.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Children Books -->
+                    <div class="book-card" data-category="children" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Tales for Little Ones</h3>
+                            <p class="author">by Mary Johnson</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(245 reviews)</span>
+                            </div>
+                            <p class="price">$19.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-category="children" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Adventure Island</h3>
+                            <p class="author">by Tom Brown</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(167 reviews)</span>
+                            </div>
+                            <p class="price">$16.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Education Books -->
+                    <div class="book-card" data-category="education" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Advanced Mathematics</h3>
+                            <p class="author">by Prof. Lisa Chen</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(92 reviews)</span>
+                            </div>
+                            <p class="price">$45.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-category="education" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Programming Fundamentals</h3>
+                            <p class="author">by Alex Rodriguez</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(312 reviews)</span>
+                            </div>
+                            <p class="price">$39.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Poetry Books -->
+                    <div class="book-card" data-category="poetry" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Poetry Collection</h3>
+                            <p class="author">by Robert Williams</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(134 reviews)</span>
+                            </div>
+                            <p class="price">$22.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-category="poetry" style="display: none;">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Book Cover">
+                        <div class="book-info">
+                            <h3>Verses of the Heart</h3>
+                            <p class="author">by Amanda White</p>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(87 reviews)</span>
+                            </div>
+                            <p class="price">$18.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BookHaven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Category switching functionality
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const bookCards = document.querySelectorAll('.book-card');
+        const categoryTitle = document.getElementById('category-title');
+        const categoryDescription = document.getElementById('category-description');
+        const currentCategory = document.getElementById('current-category');
+
+        const categoryData = {
+            'fiction': {
+                title: 'Fiction Books',
+                description: 'Explore imaginary worlds and compelling stories'
+            },
+            'non-fiction': {
+                title: 'Non Fiction Books',
+                description: 'Learn from real experiences and factual knowledge'
+            },
+            'children': {
+                title: 'Children Books',
+                description: 'Delightful stories for young readers'
+            },
+            'education': {
+                title: 'Education Books',
+                description: 'Academic and learning resources'
+            },
+            'poetry': {
+                title: 'Poetry Books',
+                description: 'Beautiful verses and literary expressions'
+            }
+        };
+
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const category = tab.dataset.category;
+                
+                // Update active tab
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                // Update page content
+                categoryTitle.textContent = categoryData[category].title;
+                categoryDescription.textContent = categoryData[category].description;
+                currentCategory.textContent = categoryData[category].title.replace(' Books', '');
+                
+                // Show/hide books
+                bookCards.forEach(card => {
+                    if (card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Get category from URL parameter if available
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryParam = urlParams.get('category');
+        if (categoryParam) {
+            const targetTab = document.querySelector(`[data-category="${categoryParam}"]`);
+            if (targetTab) {
+                targetTab.click();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - BookHaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>📚 BookHaven</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart.html" class="active">Cart (3)</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <h2>Your Shopping Cart</h2>
+                
+                <div class="cart-content">
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=150&h=200&fit=crop" alt="Book Cover">
+                            <div class="item-details">
+                                <h3>The Great Adventure</h3>
+                                <p class="author">by Jane Smith</p>
+                                <p class="category">Fiction</p>
+                            </div>
+                            <div class="item-quantity">
+                                <button class="quantity-btn">-</button>
+                                <span>1</span>
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <div class="item-price">$24.99</div>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        
+                        <div class="cart-item">
+                            <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=150&h=200&fit=crop" alt="Book Cover">
+                            <div class="item-details">
+                                <h3>Modern Science</h3>
+                                <p class="author">by Dr. John Doe</p>
+                                <p class="category">Education</p>
+                            </div>
+                            <div class="item-quantity">
+                                <button class="quantity-btn">-</button>
+                                <span>2</span>
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <div class="item-price">$69.98</div>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        
+                        <div class="cart-item">
+                            <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=150&h=200&fit=crop" alt="Book Cover">
+                            <div class="item-details">
+                                <h3>Poetry Collection</h3>
+                                <p class="author">by Robert Williams</p>
+                                <p class="category">Poetry</p>
+                            </div>
+                            <div class="item-quantity">
+                                <button class="quantity-btn">-</button>
+                                <span>1</span>
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <div class="item-price">$22.99</div>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <div class="summary-card">
+                            <h3>Order Summary</h3>
+                            <div class="summary-line">
+                                <span>Subtotal (4 items)</span>
+                                <span>$117.96</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>Shipping</span>
+                                <span>$5.99</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>Tax</span>
+                                <span>$9.90</span>
+                            </div>
+                            <div class="summary-line total">
+                                <span>Total</span>
+                                <span>$133.85</span>
+                            </div>
+                            <a href="payment.html" class="order-now-btn">Order Now</a>
+                            <a href="index.html" class="continue-shopping">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BookHaven. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

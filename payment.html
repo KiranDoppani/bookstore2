@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - BookHaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>📚 BookHaven</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart.html">Cart (3)</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-section">
+            <div class="container">
+                <h2>Secure Checkout</h2>
+                
+                <div class="checkout-content">
+                    <div class="checkout-forms">
+                        <div class="form-section">
+                            <h3>Shipping Information</h3>
+                            <form class="checkout-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip">ZIP Code</label>
+                                        <input type="text" id="zip" name="zip" required>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>Payment Information</h3>
+                            <form class="checkout-form">
+                                <div class="form-group">
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="expiry">Expiry Date</label>
+                                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="cardName">Name on Card</label>
+                                    <input type="text" id="cardName" name="cardName" required>
+                                </div>
+                                
+                                <div class="payment-methods">
+                                    <h4>We Accept:</h4>
+                                    <div class="payment-icons">
+                                        <span class="payment-icon">💳</span>
+                                        <span class="payment-icon">🏦</span>
+                                        <span class="payment-icon">💰</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <div class="summary-card">
+                            <h3>Order Summary</h3>
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <span>The Great Adventure</span>
+                                    <span>$24.99</span>
+                                </div>
+                                <div class="order-item">
+                                    <span>Modern Science (x2)</span>
+                                    <span>$69.98</span>
+                                </div>
+                                <div class="order-item">
+                                    <span>Poetry Collection</span>
+                                    <span>$22.99</span>
+                                </div>
+                            </div>
+                            <div class="summary-line">
+                                <span>Subtotal</span>
+                                <span>$117.96</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>Shipping</span>
+                                <span>$5.99</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>Tax</span>
+                                <span>$9.90</span>
+                            </div>
+                            <div class="summary-line total">
+                                <span>Total</span>
+                                <span>$133.85</span>
+                            </div>
+                            <a href="orderconfirm.html" class="place-order-btn">Place Order</a>
+                            <div class="security-note">
+                                <p>🔒 Your payment information is encrypted and secure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BookHaven. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
